@@ -3,8 +3,8 @@ repo_url: https://github.com/eliasnogueira/
 repo_name: eliasnogueira
 theme:
   name: material
-  logo: /assets/logo.png
-  favicon: /assets/favicon.png
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   icon:
     repo: fontawesome/brands/github
   palette:
