@@ -1,7 +1,12 @@
 site_name: RestAssured Hands-on lab
-repo_url: https://github.com/eliasnogueira/restassured-workshop-3h
+repo_url: https://github.com/eliasnogueira/
+repo_name: eliasnogueira
 theme:
   name: material
+  logo: /assets/logo.png
+  favicon: /assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
   palette:
     # Palette toggle for light mode
     - scheme: slate
@@ -15,7 +20,7 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
 extra:
-  copyright: Copyright &copy; 2022 Elias Nogueira
+  copyright: Copyright &copy; 2023 Elias Nogueira
   social:
     - icon: "fontawesome/brands/github"
       link: "https://github.com/eliasnogueira"
