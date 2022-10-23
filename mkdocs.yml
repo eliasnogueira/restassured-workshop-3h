@@ -1,0 +1,55 @@
+site_name: RestAssured Hands-on lab
+repo_url: https://github.com/eliasnogueira/restassured-workshop-3h
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+extra:
+  copyright: Copyright &copy; 2022 Elias Nogueira
+  social:
+    - icon: "fontawesome/brands/github"
+      link: "https://github.com/eliasnogueira"
+    - icon: "fontawesome/brands/twitter"
+      link: "http://twitter.com/eliasnogueira"
+    - icon: "fontawesome/brands/linkedin"
+      link: "https://linkedin.com/in/eliasnogueira"
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+nav:
+  - "🏠 Home": "index.md"
+  - "1. Setup": "setup/index.md"
+  - "2. RestAssured Basics":
+      - "Explanation": "rest-assured-basics/index.md"
+      - "Lab": "rest-assured-basics/lab.md"
+  - "3. Object Mapping":
+      - "Explanation": "object-mapping/index.md"
+      - "Lab": "object-mapping/lab.md"
+  - "4. Request and Response Specs":
+      - "Explanation": "req-resp-specification/index.md"
+      - "Lab": "req-resp-specification/lab.md"
+  - "5. Authentication":
+      - "Explanation": "authentication/index.md"
+      - "Lab": "authentication/lab.md"
+  - "6. Logging":
+      - "Explanation": "logging/index.md"
+      - "Lab": "logging/lab.md"
+  - "7. OpenAPI Generator":
+      - "Explanation": "open-api-generator/index.md"
+      - "Lab": "open-api-generator/lab.md"
+  - "8. Extras":
+      - "Explanation": "extras/index.md"
+      - "Lab": "extras/lab.md"      
