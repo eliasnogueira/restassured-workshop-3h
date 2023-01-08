@@ -1,2 +1,2 @@
-# RestAssured HandsOn Lab
+# RestAssured Hands-on Lab
 
