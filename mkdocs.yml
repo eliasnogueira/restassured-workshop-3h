@@ -1,5 +1,5 @@
 site_name: RestAssured Hands-on lab
-repo_url: https://github.com/eliasnogueira/
+repo_url: https://github.com/eliasnogueira/restassured-workshop-3h
 repo_name: eliasnogueira
 theme:
   name: material
@@ -19,6 +19,8 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+  features:
+    - content.tabs.link
 extra:
   copyright: Copyright &copy; 2023 Elias Nogueira
   social:
@@ -34,6 +36,15 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true   
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
 nav:
   - "🏠 Home": "index.md"
   - "1. Setup": "setup/index.md"
