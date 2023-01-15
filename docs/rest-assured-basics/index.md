@@ -1,4 +1,4 @@
-# RestAssured Basics
+# REST Assured Basics
 
 ## Why Rest-Assured
 

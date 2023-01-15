@@ -1,2 +1,2 @@
-# RestAssured Hands-on Lab
+# REST Assured Hands-on Lab
 
