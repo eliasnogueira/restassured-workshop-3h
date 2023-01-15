@@ -1,4 +1,4 @@
-site_name: RestAssured Hands-on lab
+site_name: REST Assured Hands-on lab
 repo_url: https://github.com/eliasnogueira/restassured-workshop-3h
 repo_name: eliasnogueira
 theme:
@@ -44,13 +44,24 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - attr_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - md_in_html
 nav:
   - "🏠 Home": "index.md"
-  - "1. Setup": "setup/index.md"
+  - "1. Setup":
+      - "Local environment": "setup/local-environment.md"
+      - "Project": "setup/project.md"
   - "2. RestAssured Basics":
       - "Explanation": "rest-assured-basics/index.md"
-      - "Lab": "rest-assured-basics/lab.md"
+      - "Lab 1": "rest-assured-basics/lab1.md"
+      - "Lab 2": "rest-assured-basics/lab2.md"
   - "3. Object Mapping":
       - "Explanation": "object-mapping/index.md"
       - "Lab": "object-mapping/lab.md"
