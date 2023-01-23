@@ -1,6 +1,8 @@
 site_name: REST Assured Hands-on lab
 repo_url: https://github.com/eliasnogueira/restassured-workshop-3h
 repo_name: eliasnogueira
+extra_css:
+  - stylesheets/extra.css
 theme:
   name: material
   logo: assets/logo.png
@@ -62,9 +64,13 @@ nav:
       - "Explanation": "rest-assured-basics/index.md"
       - "Lab 1": "rest-assured-basics/lab1.md"
       - "Lab 2": "rest-assured-basics/lab2.md"
+      - "Lab 3": "rest-assured-basics/lab3.md"
+      - "Lab 4": "rest-assured-basics/lab4.md"
   - "3. Object Mapping":
       - "Explanation": "object-mapping/index.md"
-      - "Lab": "object-mapping/lab.md"
+      - "Lab 1": "object-mapping/lab1.md"
+      - "Lab 2": "object-mapping/lab2.md"
+      - "Lab 3": "object-mapping/lab3.md"
   - "4. Request and Response Specs":
       - "Explanation": "req-resp-specification/index.md"
       - "Lab": "req-resp-specification/lab.md"
@@ -79,4 +85,4 @@ nav:
       - "Lab": "open-api-generator/lab.md"
   - "8. Extras":
       - "Explanation": "extras/index.md"
-      - "Lab": "extras/lab.md"      
+      - "Lab": "extras/lab.md"

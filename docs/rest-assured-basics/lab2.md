@@ -1,28 +1,10 @@
 # REST Assured Basics - Lab 2
 
-In this lab we will learn how to validate the response body.
+In this, lab we will learn how to validate the response body.
 
 ## 1. Search for a CPF with restriction
 
-### Steps
-
-1. Create a new test method in the  `RestrictionsTest` class named `shouldReturnRestriction()`
-2. Add the following in to test:
-  - pre-condition (`given()`) using a path parameter `pathParam` using
-    - key: `cpf`
-    - value: any from the *List of CPF with restrictions*
-  - action (`when()`) to get (`get()`) the `/restrictions` endpoint
-  - assert (`then()`) in the status code expecting HTTP 200
-    - tip: use `HttpStatus.OK`
-    - add a `body()` assertion in the response body attribute `message`, using `CoreMatchers.is()` to validate the message
-
-### Expected results
-
-* Green test execution where the following verifications will be performed successfully
-  * status code
-  * assertion in the `message` attribute  
-
-### 1.1 List of CPF with restrictions
+### :octicons-copilot-warning-16: List of CPF with restrictions
 
 | CPF         |
 |-------------|
@@ -37,7 +19,28 @@ In this lab we will learn how to validate the response body.
 | 24094592008 |
 | 58063164083 |
 
-??? example "Solution"
+### :material-play-box-multiple-outline: Steps
+
+1. Create a new test method in the  `RestrictionsTest` class named `shouldReturnRestriction()`
+2. Add the following to the test:
+  - pre-condition (`given()`) using a path parameter `pathParam` using
+    - key: `cpf`
+    - value: any from the *List of CPF with restrictions*
+  - action (`when()`) to get (`get()`) the `/restrictions` endpoint
+  - assert (`then()`) in the status code expecting HTTP 200
+    - tip: use `HttpStatus.OK`
+    - add a `body()` assertion in the response body attribute `message`, using `CoreMatchers.is()` to validate the message
+1. Run the test
+
+### :material-checkbox-multiple-outline: Expected results
+
+- Green test execution where the following verifications will be performed successfully
+    - status code
+    - assertion in the `message` attribute  
+
+### :material-check-outline: Solution
+
+??? example "Click to see..."
 
     ```java
     @Test
@@ -54,11 +57,12 @@ In this lab we will learn how to validate the response body.
 
 ## 2. Understand a validation exception
 
-### Steps
+### :material-play-box-multiple-outline: Steps
 1. In the `shouldReturnRestriction()` test, change the message inside the `CoreMatchers.is()` to force a validation error
  - for example: remove the word `restrictions` from the assertion 
+2. Run the test 
 
-### Expected result
+### :material-checkbox-multiple-outline: Expected result
 
 * Test will fail, returning the following exception
 ``` 

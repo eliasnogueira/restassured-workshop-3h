@@ -43,6 +43,8 @@ public class BaseApiConfiguration {
 
 ### 2.2 Search for a CPF without restriction
 
+#### :material-play-box-multiple-outline: Steps
+
 1. Create a Java class named `RestrictionsTest` in `se.jfokus.workshop.restriction` in the `src/test/java` folder
 2. Make `RestrictionsTest` extends `BaseApiConfiguration`
 3. Create a test method named `shouldQueryCpfWithoutRestriction()`
@@ -53,8 +55,15 @@ public class BaseApiConfiguration {
   - action (`when()`) to get (`get()`) the `/restrictions` endpoint
   - assert (`then()`) in the status code expecting HTTP 404
     - tip: use `HttpStatus.SC_NOT_FOUND`
+5. Run the test
 
-??? example "Solution"
+#### :material-checkbox-multiple-outline: Expected results
+
+* Green test execution where the verification of the status code is successfull
+
+#### :material-check-outline: Solution
+
+??? example "Click to see..."
 
     ```java
     import org.apache.http.HttpStatus;
