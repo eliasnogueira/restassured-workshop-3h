@@ -1,1 +1,1 @@
-# Request and Response Spacification
+# Request and Response Specification

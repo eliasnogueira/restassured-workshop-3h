@@ -71,15 +71,16 @@ nav:
       - "Lab 1": "object-mapping/lab1.md"
       - "Lab 2": "object-mapping/lab2.md"
       - "Lab 3": "object-mapping/lab3.md"
-  - "4. Request and Response Specs":
+  - "4. Logging and Filters":
+      - "Explanation": "logging/index.md"
+      - "Lab 1": "logging/lab.md"     
+  - "5. Request and Response Specs":
       - "Explanation": "req-resp-specification/index.md"
-      - "Lab": "req-resp-specification/lab.md"
-  - "5. Authentication":
+      - "Lab 1": "req-resp-specification/lab1.md"
+      - "Extended lab": "req-resp-speciication/extended-lab.md"
+  - "6. Authentication":
       - "Explanation": "authentication/index.md"
       - "Lab": "authentication/lab.md"
-  - "6. Logging":
-      - "Explanation": "logging/index.md"
-      - "Lab": "logging/lab.md"
   - "7. OpenAPI Generator":
       - "Explanation": "open-api-generator/index.md"
       - "Lab": "open-api-generator/lab.md"
