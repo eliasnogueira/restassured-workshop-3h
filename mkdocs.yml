@@ -73,7 +73,7 @@ nav:
       - "Lab 3": "object-mapping/lab3.md"
   - "4. Logging and Filters":
       - "Explanation": "logging/index.md"
-      - "Lab 1": "logging/lab.md"     
+      - "Lab 1": "logging/lab1.md"     
   - "5. Request and Response Specs":
       - "Explanation": "req-resp-specification/index.md"
       - "Lab 1": "req-resp-specification/lab1.md"

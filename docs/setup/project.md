@@ -1,93 +1,87 @@
-# Setup - Project
+# Setup - Local environment
 
-In this lab, we will create the BaseTest class and the basic tests related to Restrictions API.
+The first thing we need to do is to check the setup and download the necessary project to run the tests.
 
-## 1. Create a new project
+## 1. Check your machine
 
-1. Open your preferred IDE
-2. Create a new Java project:
-  - based on Maven
-  - named `credit-api-tests`
-  - you can name any group, but I recommend you using `se.jfokus.workshop` 
+- [ ] JDK 17 + installed
+- [ ] Modern IDE (Intellij, VSCode, etc...)
+- [ ] Git
 
-## 2. Adding the libraries
 
-We need to add the base dependencies to start creating the tests.
+## 2. Using the backend project
 
-1. Open the `pom.xml` file and add the following dependencies
-```xml
-<project>
-    <!-- code ignored-->
+The backend project was created using SpringBoot 3 and an in-memory database. You access it at [https://github.com/eliasnogueira/credit-api](https://github.com/eliasnogueira/credit-api).
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.target>18</maven.compiler.target>
-        <maven.compiler.source>18</maven.compiler.source>
-        <junit.version></junit.version>
-    </properties>
+You can use {==one of the following approaches==} to use the application:
 
-    <dependencies>
+### :material-docker: Docker Image
 
-        <!-- JUnit 5 -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.9.2</version>
-        </dependency>
-
-        <!-- RestAssured library -->
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>5.3.0</version>
-        </dependency>
-
-        <!-- Assertion library -->
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-            <version>3.24.1</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Data generation library -->
-        <dependency>
-            <groupId>net.datafaker</groupId>
-            <artifactId>datafaker</artifactId>
-            <version>1.7.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
-            <scope>provided</scope>
-        </dependency>
-
-    </dependencies>
-</project>    
+1. Start your Docker Desktop
+2. Pull the [eliasnogueira/combined-credit-api](https://hub.docker.com/r/eliasnogueira/combined-credit-api)^140MB^ from Docker Hub
+```
+docker pull eliasnogueira/combined-credit-api
+```
+3. Start the application container
+```
+docker run --name credit-api -p 8088:8088 -d eliasnogueira/combined-credit-api
+```
+4. If you need to stop it, run
+```
+docker stop credit-api
 ```
 
-### 2.1 Libraries latest versions
+### :fontawesome-solid-jar: JAR file
 
-| Library      | Version |
-|--------------|---------|
-| Rest-Assured | [![JUnit](https://maven-badges.herokuapp.com/maven-central/org.junit.jupiter/junit-jupiter/badge.svg?style=flat)](http://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter) |
-| Rest-Assured | [![Rest-Assured](https://maven-badges.herokuapp.com/maven-central/io.rest-assured/rest-assured/badge.svg?style=flat)](http://mvnrepository.com/artifact/io.rest-assured/rest-assured) |
-| AssertJ | [![AssertJ](https://maven-badges.herokuapp.com/maven-central/org.assertj/assertj-core/badge.svg?style=flat)](http://mvnrepository.com/artifact/org.assertj/assertj-core) |
-| DataFaker | [![DataFaker](https://maven-badges.herokuapp.com/maven-central/net.datafaker/datafaker/badge.svg?style=flat)](http://mvnrepository.com/artifact/net.datafaker/datafaker) | 
-
-## 3. Make sure you have the following project structure
-
-You must have the following structure in your project:
+1. Open the project package session on GitHub: [https://github.com/eliasnogueira/credit-api/packages/1742648](https://github.com/eliasnogueira/credit-api/packages/1742648)
+2. In the *Assets* session, download the `.jar` file
+3. Open the Terminal and navigate to the folder the file was saved
 ```
-─── src
-    ├── main
-    │   └── java
-    │       └── se.jfokus.workshop
-    └── test
-        ├── java
-        │   └── se.jfokus.workshop
-        └── resources
+cd Downloads
 ```
+4. Start the application by running the following:
+```
+java -jar file-name.jar
+```
+
+### :material-github: Direct project usage
+
+1. Clone the backend project running one of the following cloning methods:
+
+=== "HTTPS"
+```
+git clone https://github.com/eliasnogueira/credit-api.git
+```
+
+=== "SSH"
+```
+git clone git@github.com:eliasnogueira/credit-api.git
+```
+
+=== "GitHub CLI"
+```
+gh repo clone eliasnogueira/credit-api
+```
+
+=== "Download ZIP"
+[https://github.com/eliasnogueira/credit-api/archive/refs/heads/main.zip](https://github.com/eliasnogueira/credit-api/archive/refs/heads/main.zip)
+
+2. Open the Terminal and navigate to the project directory
+3. Run the application
+```
+mvn spring-boot:run
+```
+
+!!! note "Running inside the IDE"
+
+You can also run the `CreditApiApplication` class located at `src/main/java`
+
+
+## 3. Access the OpenAPI specification
+We will know a little bit more about the API using the OpenAPI specification as it will also be the entry point to run exploratory checks before the test automation.
+
+
+* Clone the backend project by running one of the following cloning methods:
+
+=== ":simple-openapiinitiative: Open API page"
+[http://localhost:8088/swagger-ui/index.html](http://localhost:8088/swagger-ui/index.html)

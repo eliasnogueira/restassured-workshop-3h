@@ -165,5 +165,3 @@ You must have the following structure in your project:
 ```
 
 ## 4. Done!
-
-See you on 6th of February at 13:30!
