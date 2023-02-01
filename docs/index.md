@@ -3,7 +3,7 @@
 Thank you for being here! I promise that this 3h workshop won't be boring!
 
 === "Download the slides"
-:material-download: [Build robust API tests with RestAssured]()
+:material-download: [Build robust API tests with RestAssured](https://github.com/eliasnogueira/restassured-workshop-3h/raw/main/docs/assets/slides.pdf)
 
 
 ## How will the dynamic
