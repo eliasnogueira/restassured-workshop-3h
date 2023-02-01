@@ -1,3 +1,0 @@
-# Authentication
-
-## Different authentication methods

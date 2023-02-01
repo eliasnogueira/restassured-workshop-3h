@@ -23,6 +23,7 @@ theme:
         name: Switch to light mode
   features:
     - content.tabs.link
+    - content.code.copy
 extra:
   copyright: Copyright &copy; 2023 Elias Nogueira
   social:
@@ -61,29 +62,29 @@ nav:
       - "Local environment": "setup/local-environment.md"
       - "Project": "setup/project.md"
   - "2. RestAssured Basics":
-      - "Explanation": "rest-assured-basics/index.md"
       - "Lab 1": "rest-assured-basics/lab1.md"
       - "Lab 2": "rest-assured-basics/lab2.md"
       - "Lab 3": "rest-assured-basics/lab3.md"
       - "Lab 4": "rest-assured-basics/lab4.md"
   - "3. Object Mapping":
-      - "Explanation": "object-mapping/index.md"
       - "Lab 1": "object-mapping/lab1.md"
       - "Lab 2": "object-mapping/lab2.md"
       - "Lab 3": "object-mapping/lab3.md"
   - "4. Logging and Filters":
-      - "Explanation": "logging/index.md"
       - "Lab 1": "logging/lab1.md"     
   - "5. Request and Response Specs":
-      - "Explanation": "req-resp-specification/index.md"
       - "Lab 1": "req-resp-specification/lab1.md"
-      - "Extended lab": "req-resp-speciication/extended-lab.md"
-  - "6. Authentication":
-      - "Explanation": "authentication/index.md"
-      - "Lab": "authentication/lab.md"
-  - "7. OpenAPI Generator":
-      - "Explanation": "open-api-generator/index.md"
-      - "Lab": "open-api-generator/lab.md"
-  - "8. Extras":
+  - "6. OpenAPI Generator":
+      - "Lab 1": "open-api-generator/lab1.md"
+      - "Lab 2": "open-api-generator/lab2.md"
+  - "7. Better architecture":
+      - "Lab 1": "better-architecture/lab1.md"
+      - "Lab 2": "better-architecture/lab2.md"     
+  - "8. Data":
+      - "Lab 1": "data/lab1.md" 
+      - "Lab 2": "data/lab2.md"  
+  - "9. Extras":
       - "Explanation": "extras/index.md"
-      - "Lab": "extras/lab.md"
+      - "Lab 1": "extras/lab1.md"
+      - "Lab 2": "extras/lab2.md"
+      - "Lab 3": "extras/lab3.md"

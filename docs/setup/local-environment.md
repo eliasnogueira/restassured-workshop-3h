@@ -136,9 +136,6 @@ We need to add the base dependencies to start creating the tests.
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>wagon-maven-plugin</artifactId>
             <version>${wagon-maven-plugin.version}</version>
-            <configuration>
-                <toDir>${project.basedir}/target/openapiSpecs</toDir>
-            </configuration>
         </plugin>
 
         <plugin>
