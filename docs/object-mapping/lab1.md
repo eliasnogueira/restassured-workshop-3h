@@ -113,7 +113,8 @@
           .header("Location", CoreMatchers.containsString(SOMETHING-HERE));
        ```
     * you can get the `CPF` value from the `simulation` object
-  
+
+
  ### :material-checkbox-multiple-outline: Expected results
 
  - Green test execution where the following verifications will be performed successfully

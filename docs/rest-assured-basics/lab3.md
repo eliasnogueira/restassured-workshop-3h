@@ -16,7 +16,7 @@
 4. Add the following to the test:
     - action (`when()`) to get (`get()`) the `/simulations/` endpoint
     - assert (`then()`) in the status code expecting HTTP 200
-        - tip: use `HttpStatus.OK`
+        - tip: use `HttpStatus.SC_OK`
         - add a `body()` assertion in the response body for each attribute using `CoreMatchers.is()` to validate values returned
 5. Run the test 
 
@@ -24,7 +24,7 @@
     * don't forget to set the array position `[0].`
     * for the `id` attribute use `CoreMatchers.notNullValue()`
     * for the `amount` attribute, use the value as `BigDecimal`
-      * example: `new BigDecimal("11000.00")  
+      * example: `new BigDecimal("11000.00") `
 
 
 ### :material-checkbox-multiple-outline: Expected results

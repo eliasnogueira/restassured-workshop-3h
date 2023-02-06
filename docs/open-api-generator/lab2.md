@@ -21,7 +21,7 @@
                 </inputSpec>
                 <invokerPackage>com.eliasnogueira.credit.invoker</invokerPackage>
                 <apiPackage>com.eliasnogueira.credit.api</apiPackage>
-                <modelPackage>eliasnogueira.credit.model</modelPackage>
+                <modelPackage>com.eliasnogueira.credit.model</modelPackage>
                 <generatorName>java</generatorName>
                 <generateApiTests>false</generateApiTests>
                 <generateModelTests>false</generateModelTests>
