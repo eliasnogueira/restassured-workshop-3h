@@ -19,7 +19,7 @@ import io.restassured.config.RestAssuredConfig;
 import io.restassured.path.json.config.JsonPathConfig;
 import org.junit.jupiter.api.BeforeAll;
 
-public class BaseApiConfiguration {
+public abstract class BaseApiConfiguration {
 
     @BeforeAll
     static void mainConfiguration() {
@@ -52,7 +52,7 @@ public class BaseApiConfiguration {
   - pre-condition (`given()`) using a path parameter `pathParam` using
     - key: `cpf`
     - value: `1234567890`
-  - action (`when()`) to get (`get()`) the `/restrictions` endpoint
+  - action (`when()`) to get (`get()`) the `/restrictions/{cpf}` endpoint
   - assert (`then()`) in the status code expecting HTTP 404
     - tip: use `HttpStatus.SC_NOT_FOUND`
 5. Run the test
