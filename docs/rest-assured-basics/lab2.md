@@ -26,7 +26,7 @@ In this, lab we will learn how to validate the response body.
   - pre-condition (`given()`) using a path parameter `pathParam` using
     - key: `cpf`
     - value: any from the *List of CPF with restrictions*
-  - action (`when()`) to get (`get()`) the `/restrictions` endpoint
+  - action (`when()`) to get (`get()`) the `/restrictions/${cpf}` endpoint
   - assert (`then()`) in the status code expecting HTTP 200
     - tip: use `HttpStatus.OK`
     - add a `body()` assertion in the response body attribute `message`, using `CoreMatchers.is()` to validate the message
