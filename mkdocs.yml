@@ -82,9 +82,7 @@ nav:
       - "Lab 2": "better-architecture/lab2.md"     
   - "8. Data":
       - "Lab 1": "data/lab1.md" 
-      - "Lab 2": "data/lab2.md"  
   - "9. Extras":
       - "Explanation": "extras/index.md"
       - "Lab 1": "extras/lab1.md"
       - "Lab 2": "extras/lab2.md"
-      - "Lab 3": "extras/lab3.md"

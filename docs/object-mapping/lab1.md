@@ -1,4 +1,4 @@
-# Object Mapping Lab 1
+# Object Mapping - Lab 1
 
 ## 1. Create the Simulation object
 

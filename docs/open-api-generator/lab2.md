@@ -1,4 +1,4 @@
-# OpenAPI Generator Lab 2
+# OpenAPI Generator - Lab 2
 
 ## 1. Generate the Client Api
 

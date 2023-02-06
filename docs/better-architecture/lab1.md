@@ -1,4 +1,4 @@
-# Better architecture Lab 1
+# Better architecture - Lab 1
 
 ## 1. Create the `RestApiClientBuilder` class
 
@@ -95,3 +95,4 @@
 ### :material-checkbox-multiple-outline: Expected results
 
   - `RestrictionsApiService` class created... don't panic, we will use it later!
+  

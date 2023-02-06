@@ -1,4 +1,4 @@
-# Logging Lab 1
+# Logging - Lab 1
 
 ## 1. Add the request and response filters to the BaseTest class
 

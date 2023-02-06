@@ -1,4 +1,4 @@
-# Object Mapping Lab 2
+# Object Mapping - Lab 2
 
 ## 1. Update an existing Simulation
 

@@ -1,4 +1,4 @@
-# Better architecture Lab 2
+# Better architecture - Lab 2
 
 ## 1. Changing the  `RestrictionsTest` - `shouldQueryCpfWithoutRestriction()` test
 

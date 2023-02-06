@@ -1,4 +1,4 @@
-# Request and Response Specification Lab 1
+# Request and Response Specification - Lab 1
 
 ## 1. Creating a generic request specification
 

@@ -1,4 +1,4 @@
-# Data Lab 1
+# Data - Lab 1
 
 ## 1. Create the `SimulationDataFactory` class
 

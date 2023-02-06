@@ -1,4 +1,4 @@
-# OpenAPI Generator Lab 1
+# OpenAPI Generator - Lab 1
 
 ## 1. Download the spec from the project
 

@@ -1,4 +1,4 @@
-# Object Mapping Lab 3
+# Object Mapping - Lab 3
 
 ## 1. Using object deserialization
 
