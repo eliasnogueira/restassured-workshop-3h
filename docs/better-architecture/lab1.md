@@ -4,7 +4,7 @@
 
 ### :material-play-box-multiple-outline: Steps
 
-1. In the `se.jfokus.workshop` package create a Java class named `RestApiClientBuilder` 
+1. In the `com.workshop` package create a Java class named `RestApiClientBuilder` 
 2. Add the following code inside it
     ```java
     import io.restassured.builder.RequestSpecBuilder;
@@ -35,13 +35,13 @@
 
 ### :material-play-box-multiple-outline: Steps
 
-1. In the `se.jfokus.workshop` package in the `src/main/java` folder, create a package called `api.client`
-2. Create a Java class named `RestrictionsApiClient` in the `se.jfokus.workshop.api.client` package
+1. In the `com.workshop` package in the `src/main/java` folder, create a package called `api.client`
+2. Create a Java class named `RestrictionsApiClient` in the `com.workshop.api.client` package
 3. Add the following code inside it
     ```java
     import com.eliasnogueira.credit.api.RestrictionsApi;
     import io.restassured.response.Response;
-    import se.jfokus.workshop.api.RestApiClientBuilder;
+    import com.workshop.api.RestApiClientBuilder;
 
     import java.util.function.Function;
 
@@ -64,13 +64,13 @@
 
 ### :material-play-box-multiple-outline: Steps
 
-1. In the `se.jfokus.workshop` package in the `src/main/java` folder, create a package called `api.service`
-2. Create a Java class named `RestrictionsApiService` in the `se.jfokus.workshop.api.service` package
+1. In the `com.workshop` package in the `src/main/java` folder, create a package called `api.service`
+2. Create a Java class named `RestrictionsApiService` in the `com.workshop.api.service` package
 3. Add the following code inside it
     ```java
     import com.eliasnogueira.credit.model.MessageV1;
     import org.apache.http.HttpStatus;
-    import se.jfokus.workshop.api.client.RestrictionsApiClient;
+    import com.workshop.api.client.RestrictionsApiClient;
 
     public class RestrictionsApiService {
 

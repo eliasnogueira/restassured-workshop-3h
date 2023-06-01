@@ -4,8 +4,8 @@
 
 ### :material-play-box-multiple-outline: Steps
 
-1. In the `se.jfokus.workshop` package in the `src/main/java` folder, create a package called `models`
-2. Create a Java class named `Simulation` in the `se.jfokus.workshop.models` package
+1. In the `com.workshop` package in the `src/main/java` folder, create a package called `models`
+2. Create a Java class named `Simulation` in the `com.workshop.models` package
 3. Add the following annotation on the top of the class name, from Lombok:
     - `@Data`
     - `@Builder`
@@ -31,7 +31,7 @@
 ??? example "Click to see..."
 
     ```java
-    package se.jfokus.workshop.models;
+    package com.workshop.models;
 
     import lombok.AllArgsConstructor;
     import lombok.Builder;
@@ -59,7 +59,7 @@
 
 ### :material-play-box-multiple-outline: Steps
 
-1. Open the `SimulationsTest` in `se.jfokus.workshop.simulation` in the `src/test/java` folder
+1. Open the `SimulationsTest` in `com.workshop.simulation` in the `src/test/java` folder
 2. Create a test method named `shouldCreateNewSimulation()`
 3. Create a `Simulation` object using the builder method
 4. Add the precondition using the following methods:
@@ -135,7 +135,7 @@
             .body(simulation)
             .contentType(ContentType.JSON)
         .when()
-            .post("/simulations/")
+            .post("/simulations")
         .then()
             .statusCode(HttpStatus.SC_CREATED)
             .header("Location", CoreMatchers.containsString(simulation.getCpf()));

@@ -4,7 +4,7 @@
 
 ### :material-play-box-multiple-outline: Steps
 
-1. Open the `BaseApiConfiguration` class located at `src/test/java` in the `se.jfokus.workshop` package
+1. Open the `BaseApiConfiguration` class located at `src/test/java` in the `com.workshop` package
 2. At the end of the method add: 
      - the `RestAssured.filters()` method
      - `new RequestLoggingFilter()` as the first parameter

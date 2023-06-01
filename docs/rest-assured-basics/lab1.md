@@ -5,7 +5,7 @@
 The base test class is one test pattern that must be used in any layer.
 Let's add the basic RESTAssured configuration:
 
-1. Create a class named `BaseApiConfiguration` in the `se.jfokus.workshop` at `src/test/java/` folder
+1. Create a class named `BaseApiConfiguration` in the `com.workshop` package at `src/test/java/` folder
 2. Add the keyword abstract on its declaration
 ```java
 public abstract class BaseApiConfiguration {
@@ -39,13 +39,13 @@ public abstract class BaseApiConfiguration {
 
 ### 2.1 Create the package to add the restrictions tests
 
-1. Create an additional package called `restriction` in `se.jfokus.workshop` in the `src/test/java` folder
+1. Create an additional package called `restriction` in `com.workshop` in the `src/test/java` folder
 
 ### 2.2 Search for a CPF without restriction
 
 #### :material-play-box-multiple-outline: Steps
 
-1. Create a Java class named `RestrictionsTest` in `se.jfokus.workshop.restriction` in the `src/test/java` folder
+1. Create a Java class named `RestrictionsTest` in `com.workshop.restriction` in the `src/test/java` folder
 2. Make `RestrictionsTest` extends `BaseApiConfiguration`
 3. Create a test method named `shouldQueryCpfWithoutRestriction()`
 4. Add the following to the test:
@@ -67,16 +67,14 @@ public abstract class BaseApiConfiguration {
 
     ```java
     import org.apache.http.HttpStatus;
-    import org.junit.jupiter.api.DisplayName;
     import org.junit.jupiter.api.Test;
-    import se.jfokus.workshop.BaseApiConfiguration;
+    import com.workshop.BaseApiConfiguration;
 
     import static io.restassured.RestAssured.given;
 
     class RestrictionsTest extends BaseApiConfiguration {
 
         @Test
-        @DisplayName("Should query CPF without restriction")
         void shouldQueryCpfWithoutRestriction() {
             given()
                 .pathParam("cpf", "1234567890")

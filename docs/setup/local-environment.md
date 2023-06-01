@@ -15,22 +15,6 @@ The backend project was created using SpringBoot 3 and an in-memory database. Yo
 
 You can use {==one of the following approaches==} to use the application:
 
-### :material-docker: Docker Image
-
-1. Start your Docker Desktop
-2. Pull the [eliasnogueira/combined-credit-api](https://hub.docker.com/r/eliasnogueira/combined-credit-api)^140MB^ from Docker Hub
-```
-docker pull eliasnogueira/combined-credit-api
-```
-3. Start the application container
-```
-docker run --name credit-api -p 8088:8088 -d eliasnogueira/combined-credit-api
-```
-4. If you need to stop it, run
-```
-docker stop credit-api
-```
-
 ### :fontawesome-solid-jar: JAR file
 
 1. Open the project package session on GitHub: [https://github.com/eliasnogueira/credit-api/packages/1742648](https://github.com/eliasnogueira/credit-api/packages/1742648)
@@ -69,7 +53,7 @@ gh repo clone eliasnogueira/credit-api
 2. Open the Terminal and navigate to the project directory
 3. Run the application
 ```
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
 !!! note "Running inside the IDE"

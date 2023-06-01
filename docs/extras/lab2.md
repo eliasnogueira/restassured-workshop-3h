@@ -1,6 +1,6 @@
 # Extra - Lab 2
 
-In thi lab you need to refactor the `SimulationsTest` placed in the `se.jfokus.workshop.simulation` in the `src/java/test` folder.
+In thi lab you need to refactor the `SimulationsTest` placed in the `com.workshop.simulation` in the `src/java/test` folder.
 A beter approach is to comment all the previous tests.
 
 

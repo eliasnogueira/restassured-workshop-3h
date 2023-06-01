@@ -1,16 +1,37 @@
 # Setup - Project
 
-In this lab, we will create the BaseTest class and the basic tests related to Restrictions API.
+The setup consists in creating the test project. You can donwload it or create one using the necessary libraries.
 
-## 1. Create a new project
+## 1. Clone or Download the base project
+
+The base project already have all the libraries added.
+
+### 1.1 Clone the project
+
+1. Open your Terminal
+2. Navigate to a know folder in your computer
+3. Run the following command to clone the project
+   ```
+   git clone https://github.com/eliasnogueira/restassured-workshop-3h-test.git
+   ```
+
+### 1.2 [optional] Download
+
+1. Click in the following link to download the project as a zip file
+  - https://github.com/eliasnogueira/restassured-workshop-3h-test/archive/refs/heads/main.zip
+
+
+## 2. Create a new project
+
+!!! note "This is an optional step if you need to create the project yourself!"
 
 1. Open your preferred IDE
 2. Create a new Java project:
 - based on Maven
 - named `credit-api-tests`
-- you can name any group, but I recommend you using `se.jfokus.workshop`
+- you can name any group, but I recommend you using `com.workshop`
 
-## 2. Adding the libraries
+### 2.1 Adding the libraries
 
 We need to add the base dependencies to start creating the tests.
 
@@ -147,18 +168,18 @@ We need to add the base dependencies to start creating the tests.
 </build>
 ```
 
-## 3. Make sure you have the following project structure
+### 2.2 Make sure you have the following project structure
 
 You must have the following structure in your project:
 ```
 ─── src
 ├── main
 │   └── java
-│       └── se.jfokus.workshop
+│       └── com.workshop
 └── test
 │   └──java
-│       └── se.jfokus.workshop
-└── resources
+│       └── com.workshop
+└───── resources
 ```
 
-## 4. Done!
+## 3. Done!

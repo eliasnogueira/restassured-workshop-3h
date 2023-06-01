@@ -3,14 +3,14 @@
 
 ## 1. Create the package to add the restrictions tests
 
-1. Create an additional package called `simulation` in `se.jfokus.workshop` in the `src/test/java` folder
+1. Create an additional package called `simulation` in `com.workshop` package at the `src/test/java` folder
 
 
 ## 2. Retrieve all records from the Simulation API
 
 ### :material-play-box-multiple-outline: Steps
 
-1. Create a Java class named `SimulationsTest` in `se.jfokus.workshop.simulation` in the `src/test/java` folder
+1. Create a Java class named `SimulationsTest` in `com.workshop.simulation` in the `src/test/java` folder
 2. Make `SimulationsTest` extends `BaseApiConfiguration`
 3. Create a test method named `shouldRetrieveAllSimulations()`
 4. Add the following to the test:
@@ -22,7 +22,7 @@
 
 !!! tip "Tips"
     * don't forget to set the array position `[0].`
-    * for the `id` attribute use `CoreMatchers.notNullValue()`
+    * for the `id` attribute use the `CoreMatchers.notNullValue()` assertion
     * for the `amount` attribute, use the value as `BigDecimal`
       * example: `new BigDecimal("11000.00") `
 

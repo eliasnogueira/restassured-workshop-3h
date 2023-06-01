@@ -4,8 +4,8 @@
 
 ### :material-play-box-multiple-outline: Steps
 
-1. Create a package `specs` inside the `se.jfokus.workshop` at `src/main/java`
-2. Create a class called `SharedRequestSpecs` in the `se.jfokus.workshop.specs` package
+1. Create a package `specs` inside the `com.workshop` at `src/main/java`
+2. Create a class called `SharedRequestSpecs` in the `com.workshop.specs` package
 3. Create a `public static` method called `cpfPathParameter` adding the parameter `String cpf` to it
 4. Inside the method build a request specification adding the path parameter to it, fix the `cpf` parameter name and adding the method parameter as its value
 
@@ -43,7 +43,7 @@
 
 ### :material-play-box-multiple-outline: Steps
 
-1. Open the `RestrictionsTest` class located at `src/test/java` in the `se.jfokus.workshop.restriction` package
+1. Open the `RestrictionsTest` class located at `src/test/java` in the `com.workshop.restriction` package
 2. In both tests: 
      - replace the `pathParam()` method by the `spec()` method
      - use the `cpfPathParameter()` from the `SharedRequestSpecs` class
@@ -86,3 +86,4 @@
         }
     }
     ```
+    

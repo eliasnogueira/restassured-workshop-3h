@@ -2,7 +2,7 @@
 
 ## 1. Changing the  `RestrictionsTest` - `shouldQueryCpfWithoutRestriction()` test
 
-1. Open the `RestrictionsTest` located in the `se.jfokus.workshop.restriction` package in the `src/test/java` folder
+1. Open the `RestrictionsTest` located in the `com.workshop.restriction` package in the `src/test/java` folder
 2. Remove the inheritance of the `BaseApiConfiguration`
 3. Comment the current code created in the `shouldQueryCpfWithoutRestriction()` test
 4. Create a `RestrictionsApiService` within the name `restrictionsService`
@@ -79,7 +79,7 @@
 
 ## 3. Cleaning up `BaseApiConfiguration` class
 
-1. Open the `BaseApiConfiguration` located in the `se.jfokus.workshop` package in the `src/test/java` folder
+1. Open the `BaseApiConfiguration` located in the `com.workshop` package in the `src/test/java` folder
 2. Remove the usage of:
     - `RestAssured.baseURI = "http://localhost";`
     - `RestAssured.basePath = "/api/v1";`

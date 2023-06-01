@@ -28,7 +28,7 @@ In this, lab we will learn how to validate the response body.
     - value: any from the *List of CPF with restrictions*
   - action (`when()`) to get (`get()`) the `/restrictions/{cpf}` endpoint
   - assert (`then()`) in the status code expecting HTTP 200
-    - tip: use `HttpStatus.OK`
+    - tip: use `HttpStatus.SC_OK`
     - add a `body()` assertion in the response body attribute `message`, using `CoreMatchers.is()` to validate the message
 1. Run the test
 

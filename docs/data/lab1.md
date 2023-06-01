@@ -5,8 +5,8 @@
 ### :material-play-box-multiple-outline: Steps
 
 1. Open the `pom.xml` and remove the `<scope>test</scope>` for the DataFaker library
-2. In the `se.jfokus.workshop` package create package called `data` in the `src/main/java` 
-3. Create a class called `SimulationDataFactory` in the `se.jfokus.workshop` in the `src/main/java`
+2. In the `com.workshop` package create package called `data` in the `src/main/java` 
+3. Create a class called `SimulationDataFactory` in the `com.workshop` in the `src/main/java`
 4. Do the following in the class
     - make the class `final`
     - create a private constructuor
@@ -51,7 +51,7 @@
                 .body(simulation)
                 .contentType(ContentType.JSON)
             .when()
-                .post("/simulations/")
+                .post("/simulations")
             .then()
                 .statusCode(HttpStatus.SC_CREATED)
                 .header("Location", CoreMatchers.containsString(simulation.getCpf()));
