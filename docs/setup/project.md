@@ -1,15 +1,15 @@
 # Setup - Project
 
-The setup consists in creating the test project. You can donwload it or create one using the necessary libraries.
+The setup consists in creating the test project. You can download it or create one using the necessary libraries.
 
 ## 1. Clone or Download the base project
 
-The base project already have all the libraries added.
+The base project already has all the libraries added.
 
 ### 1.1 Clone the project
 
 1. Open your Terminal
-2. Navigate to a know folder in your computer
+2. Navigate to a known folder in your computer
 3. Run the following command to clone the project
    ```
    git clone https://github.com/eliasnogueira/restassured-workshop-3h-test.git
@@ -17,7 +17,7 @@ The base project already have all the libraries added.
 
 ### 1.2 [optional] Download
 
-1. Click in the following link to download the project as a zip file
+1. Click on the following link to download the project as a zip file
   - https://github.com/eliasnogueira/restassured-workshop-3h-test/archive/refs/heads/main.zip
 
 
@@ -29,7 +29,7 @@ The base project already have all the libraries added.
 2. Create a new Java project:
 - based on Maven
 - named `credit-api-tests`
-- you can name any group, but I recommend you using `com.workshop`
+- you can name any group, but I recommend you use `com.workshop`
 
 ### 2.1 Adding the libraries
 

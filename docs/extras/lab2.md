@@ -1,7 +1,7 @@
 # Extra - Lab 2
 
-In thi lab you need to refactor the `SimulationsTest` placed in the `com.workshop.simulation` in the `src/java/test` folder.
-A beter approach is to comment all the previous tests.
+In this lab, you need to refactor the `SimulationsTest` placed in the `com.workshop.simulation` in the `src/java/test` folder.
+A better approach is to comment on all the previous tests.
 
 
 ## 1. Refactor the `shouldRetrieveAllSimulations()` test
@@ -17,7 +17,7 @@ A beter approach is to comment all the previous tests.
 
 1. In the `shouldRetrieveAllSimulations()` test, use the `SimulationsApiService` to:
     - retrieve all the simulations
-    - assert if the list size is equals to or higher than 1
+    - assert if the list size is equa to or higher than 1
 2. Run the test
 
 !!! tip "Tips"
@@ -170,7 +170,7 @@ A beter approach is to comment all the previous tests.
 3. Create the simulation using the `createSimulation()` method from the service class
 4. Change the name of the Simulation created in step 2
 5. Update the Simulation using the `cpf` from the object created in step 2
-6. Assert that the Simulation object from the step 2 is equal to the one returned from the updated in the step 5
+6. Assert that the Simulation object from step 2 is equal to the one returned from the updated in step 5
 7. Run the test
 
 ### :material-checkbox-multiple-outline: Expected results

@@ -3,7 +3,7 @@
 
 ## 1. Create the package to add the restrictions tests
 
-1. Create an additional package called `simulation` in `com.workshop` package at the `src/test/java` folder
+1. Create an additional package called `simulation` in `com.workshop` package in the `src/test/java` folder
 
 
 ## 2. Retrieve all records from the Simulation API

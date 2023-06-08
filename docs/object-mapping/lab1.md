@@ -11,7 +11,7 @@
     - `@Builder`
     - `@NoArgsConstructor`
     - `@AllArgsConstructor`
-5. Add the following `private` attributes and it's type:
+5. Add the following `private` attributes and their type:
    
     | type         | name         |
     |--------------|--------------|

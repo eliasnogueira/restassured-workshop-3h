@@ -59,7 +59,7 @@ public abstract class BaseApiConfiguration {
 
 #### :material-checkbox-multiple-outline: Expected results
 
-* Green test execution where the verification of the status code is successfull
+* Green test execution where the verification of the status code is successful
 
 #### :material-check-outline: Solution
 
